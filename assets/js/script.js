@@ -72,7 +72,7 @@ ref = findMixinIndex("Egg");
 
 const avaiable_ing = new Set(['Kahlua', 'Sambuca', 'Grand Marnier', 'Vodka']);
 var test = drinkRecipes.filter(cocktail => {
-    cocktail.ingArray.every(avaiable_ing.has());
+    cocktail.ingArray.every(array => array == avaiable_ing.has());
     console.log(cocktail.ingArray);
 })
 console.log(test);
